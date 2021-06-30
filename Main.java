@@ -1,10 +1,10 @@
 class Box{
     double width,height,depth;
-    Box(){
+    Box(double w , double h , double d){
         System.out . println (" Koнcтpyиpoвaниe объекта Вох") ; 
-        width = 10;
-        height = 2;
-        depth = 30;
+        width = w;
+        height = h;
+        depth = d; 
     }
     double volume(){
         
@@ -13,8 +13,8 @@ class Box{
 }
 class Main{
     public static void main(String args[]){
-        Box mybox1 = new Box();
-        Box mybox2 = new Box();
+        Box mybox1 = new Box(10,10,15);
+        Box mybox2 = new Box(3,6,9);
        
 
        
