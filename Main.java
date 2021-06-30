@@ -2,7 +2,7 @@ class Box{
     double width,height,depth;
     void volume(){
         
-        System.out.println("Object = ");
+        System.out.print("Object = ");
         System.out.println( width * height * depth);
     }
 }
