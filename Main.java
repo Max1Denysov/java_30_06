@@ -17,7 +17,7 @@ class Main{
         Box mybox2 = new Box(3,6,9);
        
 
-       
+       double numb;
 
         
         System . out . println ( " Oбъeм равен " + mybox1.volume() ) ;
