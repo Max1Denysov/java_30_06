@@ -1,28 +1,29 @@
-class Over {
-    void test () {
-        System.out . println ( "Пapaмeтpы отсутствуют") ;
+class P {
+    private String name;
+    private int age;
+ 
+    // Getter
+    public String getName() {
+      return name;
     }
-    void test ( int а) {
-        System.out.println ( "a: " + а );
+    public int getAge(){
+        return age;
     }
-    void test ( int а, int Ь) {
-        System . out . println ("a и Ь: "+а +""+ Ь);
+ 
+    // Setter
+    public void setName(String newName) {
+      this.name = newName;
     }
-    double test ( double а) {
-        System . out . println ( "double а: " + а );
-        return а*а; 
+    public void setAge(int newAge){
+        this.age = newAge;
     }
-
-}
-
-class Overload{
+ }
+class Overload {
+    public static void main(String[] args) {
+        P myObj = new P();
+        myObj.setName("John "); // Set the value of the name variable to "John"
+        myObj.setAge(14);
+        System.out.println(myObj.getName()+myObj.getAge());
     
-    public static void main(String args[]){
-        Over something =  new Over();
-        something.test();
-        something.test(12);
-        something.test(12,34);
-        something.test(323.45);
-
     }
-}
+  }
